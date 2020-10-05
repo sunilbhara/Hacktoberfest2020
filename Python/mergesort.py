@@ -5,8 +5,8 @@ def mergesort(x):
         return sorted(x)
     result = []
     mid = int(len(x) / 2)
-    y = msort4(x[:mid])
-    z = msort4(x[mid:])
+    y = mergesort(x[:mid])
+    z = mergesort(x[mid:])
     i = 0
     j = 0
     while i < len(y) and j < len(z):
@@ -20,6 +20,6 @@ def mergesort(x):
     result += z[j:]
     return result
 
-rnd = [random.randint(0, 50) for _ in range(10)]
+rnd = [random.randint(0, 50) for _ in range(25)]
 print('Unsorted array:', rnd)
 print('Sorted array: ', mergesort(rnd))
