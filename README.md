@@ -2,6 +2,13 @@
 
 ![image](hacktoberfest.png)
 
+UPDATED (10/05/2020 15:00 UTC): An update on efforts to reduce spam with Hacktoberfest:
+We will honor all valid pull requests prior to this change, and as of October 3, 2020 at 12:00:00 UTC – and October 3 in all time zones – pull requests will only count toward earning a T-shirt or planting a tree if they are labeled as ‘hacktoberfest-accepted’ by a maintainer, or submitted in a repository classified with the ‘hacktoberfest’ topic. Pull requests in repositories with the ‘hacktoberfest’ topic will also need to be merged, approved by a maintainer, or labeled as ‘hacktoberfest-accepted’ in order to qualify. The deadline for completions, merging, labeling, and approving is November 1.
+
+To put the rules in a form consistent with the spirit of Hacktoberfest:
+
+![image](NewRules.png)
+
 ### Hacktoberfest is a month-long virtual festival to celebrate open source software in partnership with Github. It is celebrated in the month of October every year. All you have to do is contribute to any open source projects and make at least 4 pull requests within the month of October.
 
 ### The first 70,000 participants who successfully complete the challenge will be eligible to receive a prize. (Do it soon, let's start! ;) )
