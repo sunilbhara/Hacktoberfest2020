@@ -1,5 +1,3 @@
-package com.company;
-
 import java.io.*;
 import java.util.*;
 
@@ -54,3 +52,20 @@ class Dfs
     }
 
 }
+
+/*The given is used to traverse a graph in dfs
+INPUT:
+        g.addEdge(0,1);
+	    g.addEdge(0, 3);
+        g.addEdge(0, 4);
+        g.addEdge(1, 4);
+        g.addEdge(2, 0);
+        g.addEdge(4, 5);
+        g.addEdge(5, 0);
+        g.addEdge(5, 1);
+        g.dfsTraversal(0);
+        
+  OUTPUT:
+        [0][0, 1][0, 1, 4][0, 1, 4, 5][0, 1, 4, 5, 2][0, 1, 4, 5, 2, 3]
+    
+*/
