@@ -12,5 +12,5 @@ elif unit == "fahrenheit":
     temp = (int(num) - 32) / (9/5)
     print(num, "degrees Fahrenheit converts to ", temp, "degrees Celsius.")
 else:
-    # I always mispell Fahrenheit lol
+    # I always mispell Fahrenheit 101
     print("Please check your unit spelling!")
