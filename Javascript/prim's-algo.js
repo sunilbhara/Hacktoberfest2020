@@ -1,4 +1,4 @@
-primsMST() {
+function primsMST() {
        // Initialize graph that'll contain the MST
        const MST = new Graph();
        if (this.nodes.length === 0) {
