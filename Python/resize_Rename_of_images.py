@@ -20,7 +20,7 @@ for file in os.listdir(f):
         pass
       
       
-##code for image rename
+## code for image rename
 
 import os
 path = os.chdir("C:\\Users\\SMART\\Desktop\\scrpeer\\images\\ant_man")
@@ -32,7 +32,7 @@ for file in os.listdir(path):
     print("done")
     
     
- ##code for data augmentation(used for CV projects to increse size of dataset)
+ ## code for data augmentation(used for CV projects to increse size of dataset)
 
 #requirements
 pip install tensorflow
