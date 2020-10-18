@@ -1,4 +1,4 @@
-#include "assign1_q2_funcs.h"
+#include "parallel_merge_sort_funcs.h"
 #include <math.h>
 #include <stdlib.h>
 #include <stdio.h>
