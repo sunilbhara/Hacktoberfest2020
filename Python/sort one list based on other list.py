@@ -1,6 +1,4 @@
-# Python program to sort 
-# one list using
-# the other list
+# Python program to sort one list using the other list
  
 def sort_list(list1, list2):
  
