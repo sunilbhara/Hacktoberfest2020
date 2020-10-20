@@ -22,4 +22,4 @@ class armstrong{
                 System.out.print(i + " ");
         }
     }
-}   
+}
