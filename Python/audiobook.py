@@ -1,4 +1,4 @@
-import pyttsx3   
+import pyttsx3 as pts 
 import PyPDF2 as pyPDF
 from tkinter.filedialog import *
 
