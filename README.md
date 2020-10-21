@@ -6,7 +6,7 @@
 
 ### The first 70,000 participants who successfully complete the challenge will be eligible to receive a prize. (Do it soon, let's start! ;) )
 
-### This is a beginner-friendly repo to help you in open-source contributions. Made specifically for HACKTOBERFEST 2020!  O_o
+### This is a beginner-friendly repo to help you in open-source contributions. Made specifically for HACKTOBERFEST 2020!  
 
 ### Please check first if your code is already present in this repo, if it's already there then don't add that!
 
