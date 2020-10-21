@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+##REVERSE A LIST
 
 def swap(a, i, j):
     temp = a[i]
