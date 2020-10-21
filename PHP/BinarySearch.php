@@ -42,5 +42,5 @@ if(($result == -1))
 echo "Element is not present in array"; 
 else
 echo "Element is present at index ", 
-$result; 							
+      $result; 							
 ?> 
