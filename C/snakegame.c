@@ -1,3 +1,5 @@
+//Writer:Prakhar Sharma 
+//Github username: its-prakhar-sharma
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
