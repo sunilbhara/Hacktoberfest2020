@@ -4,7 +4,7 @@
 
 ### Hacktoberfest is a month-long virtual festival to celebrate open source software in partnership with Github. It is celebrated in the month of October every year. All you have to do is contribute to any open source projects and make at least 4 pull requests within the month of October.
 
-### The first 70,000 participants who successfully complete the challenge will be eligible to receive a prize. (Do it soon, let's start! ;) )
+### The first 70,000 participants who successfully complete the challenge will be eligible to receive a prize. (Do it soon, let's start! 😊)
 
 ### This is a beginner-friendly repo to help you in open-source contributions. Made specifically for HACKTOBERFEST 2020!
 
@@ -19,9 +19,11 @@
   5. Add your algorithm/code or simply follow the steps mentioned there.
   
 
-` You need to make 4 pull requests to win an exclusive Hacktoberfest 2020 Tshirt and stickers! `
+` You need to make 4 pull requests to win an exclusive Hacktoberfest 2020 <a href="https://hacktoberfestswaglist.com/"> Tshirt and stickers! </a>
 
 ` Even if your pull requests aren’t accepted, it should count towards your 4 pull requests (that's necessary to win the swags).`
+
+<a href ="https://youtu.be/0BV1QCl8Az0"> Click here </a> to learn a simple tutorial on pull requests. 
 
 ## Also if you are a college student, feel free to join our Discord server to chat and share resources/job opportunities/mock interviews/referrals/general informations/games and a lot more. If you want to join, you can join us at: <a href="https://discord.gg/GTJx7qh"> Cullyege Discord Server. </a>
 
@@ -30,3 +32,5 @@
 ### Give it a Star if you liked it! ⭐
 
 ### For any query feel free to reach out to us at hellocullyege@gmail.com
+
+### Good Luck! 
