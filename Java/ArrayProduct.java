@@ -1,3 +1,4 @@
+import java.util.Arrays;
 class ArrayProduct{
     public int[] productExceptSelf(int[] nums) {
         
@@ -35,11 +36,8 @@ class ArrayProduct{
     public static void main(String[] args) {
         int[] nums = {1,2,3,4};
         ArrayProduct result = new ArrayProduct();
-        System.out.println(" Product of Array Except Self " + result.productExceptSelf(nums));
+        System.out.println(" Product of Array Except Self " + Arrays.toString(result.productExceptSelf(nums)) );
         
     }
-
-
-
 
 }
