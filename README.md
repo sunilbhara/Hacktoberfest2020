@@ -21,7 +21,17 @@
 
 ` You need to make 4 pull requests to win an exclusive Hacktoberfest 2020 Tshirt and stickers! `
 
-` Even if your pull requests aren’t accepted, it should count towards your 4 pull requests (that's necessary to win the swags).`
+~~Even if your pull requests aren’t accepted, it should count towards your 4 pull requests (that's necessary to win the swags).~~
+
+**UPDATED (10/05/2020 15:00 UTC):** 
+
+**[An update on efforts to reduce spam with Hacktoberfest](https://hacktoberfest.digitalocean.com/hacktoberfest-update)**
+
+We will honor all valid pull requests prior to this change, and as of October 3, 2020 at 12:00:00 UTC – and October 3 in all time zones – pull requests will only count toward earning a T-shirt or planting a tree if they are labeled as ‘hacktoberfest-accepted’ by a maintainer, or submitted in a repository classified with the ‘hacktoberfest’ topic. Pull requests in repositories with the ‘hacktoberfest’ topic will also need to be merged, approved by a maintainer, or labeled as ‘hacktoberfest-accepted’ in order to qualify. The deadline for completions, merging, labeling, and approving is November 1.
+
+To put the rules in a form consistent with the spirit of Hacktoberfest:
+
+![image](NewRules.png)
 
 ## Also if you are a college student, feel free to join our Discord server to chat and share resources/job opportunities/mock interviews/referrals/general informations/games and a lot more. If you want to join, you can join us at: <a href="https://discord.gg/GTJx7qh"> Cullyege Discord Server. </a>
 
