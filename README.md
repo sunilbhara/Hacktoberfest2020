@@ -39,6 +39,8 @@ To put the rules in a form consistent with the spirit of Hacktoberfest:
 
 
 
+> Hacktober fest has changed their policy this year to reduce spam. Now repos are opt-in with pr being accepted in Hacktoberfest if the repo ?> has and `hacktoberfest-accepted` label and/or hacktoberfest added to the topic of repo
+
 ### Give it a Star if you liked it! ⭐
 
 ### For any query feel free to reach out to us at hellocullyege@gmail.com
