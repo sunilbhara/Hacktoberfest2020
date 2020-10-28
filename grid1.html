@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>TESTGRID</title>
+    </head>
+    <style>
+ * {
+    box-sizing: border-box;
+ }
+.head
+{
+    background-color: #b8b894;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    color:black;
+}
+.img
+{
+    
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 60%;
+    
+}
+.img1
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 90%;
+       
+}
+
+.img2
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 80%;
+       
+}
+.img3
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 80%;
+       
+}
+.img4
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 50%;
+       
+}
+.img5
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 50%;
+       
+}
+.nabar
+{ 
+display: flex;
+justify-content: flex-end;
+background-color: #b8b894  
+
+}
+a:hover
+{
+    color: #66c2ff;
+}
+a {margin-right:15px;} 
+
+.container{
+    display: grid;
+    background-color: #99ebff;
+    height:200vh;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows:.1fr 1.2fr 1fr .4fr; 
+    grid-template-areas: 
+                  "nabar nabar nabar nabar"
+                  "sidebar main main cont1"
+                  "sidebar main main cont1"
+                  "sidebar cont2 cont2 cont3"
+                  "sidebar foot foot foot";
+    grid-gap:5px;
+    
+
+}
+.container
+.nabar{color: black;grid-area: nabar;}
+.sidebar{background-color: #66d9ff;text-align:center;grid-area: sidebar;}
+.main{background-color:#80e5ff;text-align: center;grid-area: main;}
+.cont1{background-color: #33ccff;text-align:center;grid-area: cont1;}
+.cont2{background-color:#00ccff;text-align: center;grid-area: cont2;}
+.cont3{background-color: #80e5ff;text-align: center;grid-area: cont3;}
+.foot{background-color: #00ffff;text-align: center;grid-area: foot;}
+
+
+@media (max-width: 550px)
+{
+    .head{
+
+    background-color: #88cc00;
+
+    }
+    .nabar{
+      background-color: #88cc00;
+    }
+    .container{
+    grid-template-columns:1fr;
+    grid-template-rows:.2fr 1fr 2fr .5fr;
+    grid-template-areas: 
+                  "nabar"
+                  "sidebar"
+                  "main"
+                  "cont1"
+                  "cont2"
+                  "cont3"
+                  "foot";
+    grid-gap:5px;
+  }
+}
+@media (max-width: 800px)
+{
+
+    .container{
+    display: grid;
+    height:200vh;
+    grid-template-columns:1fr;
+    grid-template-rows:.1fr 1.2fr 1fr .4fr;
+    grid-template-areas: 
+                  "nabar"
+                  "sidebar"
+                  "main"
+                  "cont1"
+                  "cont2"
+                  "cont3"
+                  "foot";
+    grid-gap:5px;
+  }
+}
+    </style>
+
+    <body>
+        <div class="head">
+            MALDIVES TOURISM
+        </div>
+        <div class="container">
+        <div class="nabar">
+            <a href='#'>Home</a>
+            <a href='#'>About</a>
+            <a href="#">Contact</a>
+        </div>
+        
+        <div class="main">
+            <h2>ABOUT MALDIVES</h2><br>
+            <img src ="werf.jpg" alt="testing"class="img"><br>
+        The Maldives (/ˈmɔːldiːvs/, US: /ˈmɔːldaɪvz/ (About this soundlisten); Dhivehi: ދިވެހިރާއްޖެ  Dhivehi Raajje), officially the Republic of Maldives, is a small island nation in South Asia, situated in the Arabian Sea of the Indian Ocean. It lies southwest of Sri Lanka and India, about 700 kilometres (430 mi) from the Asian continent's mainland. The Maldives archipelago is located on the Chagos-Laccadive Ridge, a vast submarine mountain range in the Indian Ocean; this also forms a terrestrial ecoregion, together with the Chagos Archipelago and Lakshadweep.With an average ground-level elevation of 1.5 metres (4 ft 11 in) above sea level,it is the world's lowest-lying country, with even its highest natural point being one of the lowest in the world, at 5.1 metres (17 ft).
+             
+
+        </div>
+        <div class="sidebar">
+            <h2>Best Hotels In Maldives</h2><br>
+            <img src ="hy.jpg" alt="testing"class="img1"><br>
+            <h2>Taj Vivanta by Oasis</h2><br>
+            The ensuing decades have seen political instability, efforts at democratic reform, and environmental challenges posed by climate change.Independence from the United Kingdom came in 1965, and a presidential republic was established in 1968 with an elected People's Majlis. Contacr no.-23466777, checkin time-12pm<br><br><br><br><br><br>
+            <img src ="gh.jpg" alt="testing"class="img1"><br>
+            <h2>Athiri Beach Maldives</h2><br>
+            Offering water sports facilities and shuttle service, Athiri Beach Maldives is located in Dhigurah in the Ari Atoll Region. The guest house has a sun terrace and views of the sea, and guests can enjoy a meal at the restaurant.The property has a a PADI Dive Centre. The top dive spots like Kuda Rah Thila and the famous Whaleshark spots are next to the island.
+
+
+        </div>
+        <div class="cont1">
+             <h2>Places To Visit</h2><br>
+            Malé Atoll – For Urban Vibes<br>
+            <img src ="lnm.jpg" alt="testing"class="img2"><br><br><br>
+            Sun Island – For Sparkling Beaches<br>
+            <img src ="dsg.jpg" alt="testing"class="img3"><br>
+
+        </div>
+        <div class="cont2">
+            <h4>Maldives Transport Services</h4>
+            <br>
+            For a convinient vacation in maldives <br>
+            <img src ="wsd.jpg" alt="testing"class="img4"><br>
+            <img src ="zsa.jpg" alt="testing"class="img5"><br>
+            contact us :788999090<br>
+            or log on to www.maldivestransport.com<br>
+             
+        </div>
+        <div class="cont3">
+            <br><br><br><br><br><br><br><br>
+            In the 12th century Islam reached the Maldivian archipelago,which was consolidated as a sultanate, developing strong commercial and cultural ties with Asia and Africa.From the mid-16th-century the region came under the increasing influence of European colonial powers, with the Maldives becoming a British protectorate in 1887. Independence from the United Kingdom came in 1965, and a presidential republic was established in 1968 with an elected People's Majlis.<br><br><br> 
+
+        </div>
+        <div class ="foot"><br><br><br>
+            For Any Further Queries do contact us at our email id<br> 
+            In the 12th century Islam reached the Maldivian archipelago, which was consolidated as a sultanate, developing strong commercial and cultural ties with Asia and Africa.<br><br><br>
+        </div>
+</div>
+    </body>
+
+
+        
