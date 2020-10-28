@@ -1,28 +1,24 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main()
 {
-     int n, num, digit, rev = 0;
+     int num;
 
-     std::cout << "Enter a number: ";
-    std:: cin >> num;
+    cout << "Enter a number: ";
+    cin >> num;
 
-     n = num;
+     string s = to_string(num);
+     string r = s;
+     reverse(s.begin(),s.end());
+     
 
-     do
-     {
-         digit = num % 10;
-         rev = (rev * 10) + digit;
-         num = num / 10;
-     } while (num != 0);
+    cout << " The reverse of the number is: " <<r << endl;
 
-     std::cout << " The reverse of the number is: " << rev << endl;
-
-     if (n == rev)
-         std::cout << " The given number is a palindrome.";
+     if (s==r)
+         cout << " The given number is a palindrome.";
      else
-         std::cout << " The given number is not a palindrome.";
+         cout << " The given number is not a palindrome.";
 
     return 0;
 }
