@@ -1,0 +1,10 @@
+# Transpose matrix using lists in python
+
+M1 = [[12,7],
+    [4 ,5],
+    [3 ,8]]
+
+transpose = [[M1[j][i] for j in range(len(M1))] for i in range(len(M1[0]))]
+
+for row in transpose:
+   print(row)
