@@ -1,0 +1,5 @@
+{
+  "$schema": "./schemav2.json",
+  "LightUrl": "url1",
+  "DarkUrl": "url2"
+}
