@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <cs50.h>
+#include <math.h>
+
+int main(void)
+{
+    float dollars;
+    int coins = 0;
+    do
+    {
+        dollars = get_float("Enter value of change owed: ");    //prompts user for value of change owed
+    }
+    while (dollars < 0);
+    
+    int cents = round(dollars * 100);
+   
+    while (cents > 24)
+    {
+        cents = cents - 25;    //subtracting value of a quarter from the change
+        coins++;
+    }
+    while (cents > 9)
+    {
+        cents = cents - 10;   //subtracting value of a dime from the change
+        coins++;
+    }
+    while (cents > 4)
+    {
+        cents = cents - 5;    //subtracting value of a nickel from the change
+        coins++;
+    }
+    while (cents > 0)
+    {
+        cents = cents - 1;    //subtracting value of a penny from the change
+        coins++;
+    }
+    printf("%i \n", coins);
+}
