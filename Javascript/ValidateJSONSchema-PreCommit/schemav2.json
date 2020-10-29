@@ -1,0 +1,30 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "LightUrl",
+    "DarkUrl"
+   ],
+  "properties": {
+    "LightUrl": {
+      "type": "string",
+      "title": "LightUrl Schema",
+      "default": "",
+      "examples": [
+        "url1"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "DarkUrl": {
+      "type": "string",
+      "title": "DarkUrl Schema",
+      "default": "",
+      "examples": [
+        "url2"
+      ]
+    }
+  }
+}
