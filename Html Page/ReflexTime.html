@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>Reaction Tester</title>
+        <style type="text/css">
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: black;
+        }
+        h1,h3{
+            color: white;
+        }
+        p{
+            color: rgba(226, 221, 221, 0.89);
+        }
+        #rec{
+            background-color: red;
+            
+        }
+        #cir{
+            background-color: blue;
+            border-radius: 50%;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>Test Your Reflex Timings!</h1>
+        <p>Click on the boxes or circles as quickly as you can!<br>GOOD LUCK!</p>
+        <h3>Your time: <text id="txt">----</text>s</h3>
+        <div id="rec"></div>
+        <div id="cir"></div> 
+        <script type="text/javascript">
+            function func(){
+                document.getElementById("rec").style.display="inline-block";  
+                document.getElementById("cir").style.display="inline-block";  
+                var mt=Math.floor(Math.random()*351);
+                var mt1=mt+"px";
+                var ml=Math.floor(Math.random()*1001);
+                var ml1=ml+"px";
+                var h=Math.floor(Math.random()*201)+99;
+                var h1=h+"px";
+                //rectangle size
+                document.getElementById("rec").style.marginTop=mt1;
+                document.getElementById("rec").style.marginLeft=ml1
+                document.getElementById("rec").style.height=h1;
+                document.getElementById("rec").style.width=h1;
+                //circle size
+                document.getElementById("cir").style.marginTop=mt1;
+                document.getElementById("cir").style.marginLeft=ml1
+                document.getElementById("cir").style.height=h1;
+                document.getElementById("cir").style.width=h1;
+                //div colors
+                var letters = '0123456789ABCDEF'.split('');
+                var color = '#';
+                for (var i = 0; i < 6; i++ ) {
+                    color += letters[Math.floor(Math.random() * 16)];
+                }
+                document.getElementById("rec").style.backgroundColor = color;
+                document.getElementById("cir").style.backgroundColor = color;
+                //randomizing one shape
+                var r=Math.floor(Math.random()*2);
+                if(r==1){
+                    //circle is being displayed
+                    document.getElementById("rec").style.display="none";
+                    var d = new Date().getTime();
+                    return (d);
+                }
+                else{
+                    //rectangle is being displayed
+                    document.getElementById("cir").style.display="none";
+                    var d = new Date().getTime();
+                    return (d);
+                }
+            }
+            var x=func();
+            document.getElementById("rec").onclick=function(){
+                var t=new Date().getTime();
+                document.getElementById("rec").style.display="none";
+                document.getElementById("txt").innerHTML = (t-x)/1000;
+                var de=Math.floor(Math.random()*2001);
+                setTimeout(function(){x=func();}, de);
+            }
+            document.getElementById("cir").onclick=function(){
+                var t=new Date().getTime();
+                document.getElementById("cir").style.display="none";
+                document.getElementById("txt").innerHTML = (t-x)/1000;
+                var de=Math.floor(Math.random()*2001);
+                setTimeout(function(){x=func();}, de);
+            }
+        </script>
+    </body>
+</html>
