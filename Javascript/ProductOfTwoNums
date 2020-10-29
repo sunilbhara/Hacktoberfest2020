@@ -1,0 +1,9 @@
+
+"use strict"
+
+
+const ProductOfTwoNums=(a,b)=>{
+
+return a-b
+
+}
