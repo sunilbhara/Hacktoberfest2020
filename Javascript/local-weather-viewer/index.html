@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./cyborg.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Local Weather Viewer</title>
+  </head>
+
+  <body>
+    <div id="app">
+      <main v-show="weather.area" class="container">
+        <div class="jumbotron">
+          <img :src="weather.icon" :alt="weather.alt" />
+
+          <h1>
+            {{ weather.description}} at {{ weather.area }}, {{ weather.country
+            }}
+          </h1>
+
+          <hr class="my-4" />
+
+          <div v-if="metric">
+            <p class="lead">{{ weather.temperature }} °C</p>
+            <p>{{ weather.windSpeed }} m/s</p>
+          </div>
+
+          <div v-else>
+            <p class="lead">{{ imperialTemp }} °F</p>
+            <p>{{ imperialWindSpeed }} knots</p>
+          </div>
+
+          <p class="lead">
+            <button @click="metric=!metric" class="btn btn-primary btn-lg">
+              Change Units
+            </button>
+          </p>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
