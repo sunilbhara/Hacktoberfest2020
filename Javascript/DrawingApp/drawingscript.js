@@ -1,10 +1,12 @@
 const canvas = document.getElementById("canvas");
 const increaseBtn = document.getElementById("increase");
 const decreaseBtn = document.getElementById("decrease");
+const rubberBtn = document.getElementById("rubber");
 const sizeEl = document.getElementById("size");
 const colorEl = document.getElementById("color");
 const clearEl = document.getElementById("clear");
 const ctx = canvas.getContext("2d");
+
 
 let size = 10;
 let isPressed = false;
@@ -82,6 +84,12 @@ clearEl.addEventListener("click", () => {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 });
 
+rubberBtn.addEventListener("click", () => {
+  color =  "#f5f5f5";
+});
+
 function updateSizeOnScreen() {
   sizeEl.innerText = size;
 }
+
+
