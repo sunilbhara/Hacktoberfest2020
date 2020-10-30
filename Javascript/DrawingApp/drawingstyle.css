@@ -43,3 +43,6 @@ canvas {
 .toolbox > *:last-child {
   margin-left: auto;
 }
+ #rubber {
+   width: 8rem;
+ }
