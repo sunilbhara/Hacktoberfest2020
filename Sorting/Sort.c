@@ -89,7 +89,7 @@ int main()
 	{
 		scanf("%d",&a[i]);
 	}
-while(ch!=0)
+        do
 	{
 		printf("Enter 1 for Bubble Sort, 2 for Selection Sort, 3 for Insertion sort,4 for Shell Sort and 0 for exit: ");
 		scanf("%d",&ch);
@@ -121,6 +121,6 @@ while(ch!=0)
 	{
 		break;
 	}
-}
+}while(ch!=0);
 	return 0;
 }
