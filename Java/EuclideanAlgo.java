@@ -1,3 +1,4 @@
+// Euclidean Algorithm is used to find GCD(Greatest Commin Divisor) of two numbers
 import java.util.*;
 public class EuclideanAlgo {
 	public static void main(String args[]) {
