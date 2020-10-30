@@ -1,10 +1,26 @@
-let shoppingList = ["milk", "bread", "butter", "chocolate", "cream"];
-shoppingList.forEach(function (items) {
-  console.log(items);
-});
+const appendItems = (array) => {
+  array.forEach((item) => {
+  var node = document.createElement("li");
+  var textnode = document.createTextNode(item)
+  node.appendChild(textnode);
+  document.getElementById("shopping-cart").appendChild(node);
+  console.log(item)
+})}
 
-shoppingList.push("wheat", "rice", "juice", "cashews");
-console.log("updated list of items");
-shoppingList.forEach(function (shoppingBasket) {
-  console.log(shoppingBasket);
-});
+appendItems(["milk", "bread", "butter", "chocolate", "cream"]);
+appendItems(["wheat", "rice", "juice", "cashews"]);
+
+const add = () => {
+
+    inputEl = document.getElementById("input-text");
+    if (inputEl.value !== "") {
+      var node = document.createElement("li");
+      var textnode = document.createTextNode(inputEl.value)
+      node.appendChild(textnode);
+      document.getElementById("shopping-cart").appendChild(node);
+      inputEl.value = ""
+    }
+   else {
+     alert("You have to enter something to add it!")
+   }
+}
