@@ -3,10 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Shopping basket</title>
+
   </head>
   <body>
-    <h1>list of shopping items</h1>
+    <h1>List of shopping items</h1>
+    <span id="add-new-item">Add a new item: </span>
+    <input id="input-text" type="text" placeholder="Write here">
+    <button onclick="add()" id="add">Add</button>
+    <ul id="shopping-cart">
+
+    </ul>
     <script src="array.js"></script>
   </body>
 </html>
+
+

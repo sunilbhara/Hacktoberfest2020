@@ -7,28 +7,8 @@ var current_page = 1;
 var records_per_page = 3;
 */
 
-var objJson = [
-  { adName: "AdName 1" },
-  { adName: "AdName 2" },
-  { adName: "AdName 3" },
-  { adName: "AdName 4" },
-  { adName: "AdName 5" },
-  { adName: "AdName 6" },
-  { adName: "AdName 7" },
-  { adName: "AdName 8" },
-  { adName: "AdName 9" },
-  { adName: "AdName 10" },
-  { adName: "AdName 11" },
-  { adName: "AdName 12" },
-  { adName: "AdName 13" },
-  { adName: "AdName 14" },
-  { adName: "AdName 15" },
-  { adName: "AdName 16" },
-  { adName: "AdName 17" },
-  { adName: "AdName 18" },
-  { adName: "AdName 19" },
-  { adName: "AdName 20" }
-]; // Can be obtained from another source, such as your objJson variable
+var objJson = []; // Can be obtained from another source, such as your objJson variable
+for (i = 0; i < 20; i++) {objJson.push({"adName": String("AdName "+ i)})}
 
 function prevPage() {
   if (current_page > 1) {
