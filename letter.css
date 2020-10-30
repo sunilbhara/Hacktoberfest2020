@@ -1,0 +1,49 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.letter {
+  display: block;
+  position: relative;
+  width: 30%;
+  height: 200px;
+  margin: 20px 5%;
+  background: #fff;
+  border: 16px solid transparent;
+  padding: 16px;
+  background: linear-gradient(#fff, #fff) padding-box,
+    repeating-linear-gradient(
+      -45deg,
+      tomato 0,
+      tomato 12.5%,
+      transparent 0,
+      transparent 25%,
+      #58a 0,
+      #58a 37.5%,
+      transparent 0,
+      transparent 50%
+    );
+  background-size: 64px 64px;
+  box-shadow: 0 0px 4px 1px #aaa;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+  }
+
+  &::before {
+    width: 70px;
+    height: 70px;
+    right: 15px;
+    box-sizing: border-box;
+    background: #6fa7ee;
+    border: 8px solid #fffs;
+    border-style: double;
+  }
+}
