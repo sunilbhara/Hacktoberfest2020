@@ -1,0 +1,61 @@
+import java.util.*;
+class magicarray
+{
+    public static void main()
+    {
+        Scanner in=new Scanner(System.in);
+        int n;
+        System.out.println("Enter the size of the array");
+        n=in.nextInt();int a[]=new int[n];
+        System.out.println("Enter the contents of the array");int z;
+        for(int i=0;i<n;i++)
+        {
+            a[i]=in.nextInt();
+        }
+        System.out.println("Enter the number to search");
+        z=in.nextInt();double d=0.0;int f=0;int l=0;int t;
+        for(int i=0;i<n;i++)
+        {
+            if(a[i]==z)
+            {
+                d=(double)(z*z)/3;
+                String x=Double.toString(d);
+                String s=x.substring(0,x.indexOf('.'));
+                int q[]=new int[s.length()];
+                for(int j=0;j<s.length();j++)
+                {
+                     q[j]=Character.getNumericValue(s.charAt(j));
+                }
+                System.out.println("Enter the number to search");
+                System.out.println("Note!,The number entered should be less than 10");t=in.nextInt();
+                if(t>9)
+                {
+                    System.out.println("Wrong Input , Can't proceed further");
+                    System.exit(0);
+                }
+                else
+                {
+                    for(int h=0;h<q.length;h++)
+                    {
+                        if(q[h]==t)
+                        {
+                            System.out.println("Magic array");f++;
+                            System.exit(0);
+                        }                       
+                    }
+                    if(f==0)
+                    {
+                      System.out.println("Not a magic array");
+                    }
+                }
+                l++;
+            }
+        }
+        if(l==0)
+        {
+            System.out.println("Number not found");
+        }
+    }
+}
+                        
+                                                        
