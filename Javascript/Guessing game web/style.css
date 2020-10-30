@@ -5,6 +5,10 @@
         background-attachment: fixed;
     }
     
+    body {
+        font-family: 'Roboto', sans-serif;
+
+    }
     .in {
         border: black;
         color: rebeccapurple;
@@ -63,4 +67,7 @@
     
     .suyash {
         text-align: right;
+    }
+    .great {
+        color: white;
     }
