@@ -1,0 +1,3 @@
+[submodule "rust/Minimal-Kernel"]
+	path = rust/Minimal-Kernel
+	url = https://github.com/clebsonf/Seed_OS.git
