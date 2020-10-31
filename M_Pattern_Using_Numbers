@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+	int i, j, N;
+    cin >> N;
+
+    for(i=1; i<=N; i++){		
+
+        for(j=1; j<=i; j++){		//first pattern
+            cout << j;
+        }
+
+        for(j=i*2; j<N*2; j++){			//spaces
+            cout << " ";
+        }
+
+        for(j=i; j>=1; j--){		//second pattern
+            cout << j;
+        }
+
+        cout << endl;
+    }
+    return 0;
+}
+
+/*
+1      1
+12    21
+123  321
+12344321
+Output for n=4
+*/
