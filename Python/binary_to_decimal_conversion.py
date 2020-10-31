@@ -1,6 +1,7 @@
 # Taking binary input
 binary = input("Enter a binary number:")
 
+
 # Calling the function
 BinaryToDecimal(binary)
 
