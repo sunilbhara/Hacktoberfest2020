@@ -56,3 +56,17 @@ void Tan(float x)
 	t = tan(x);
 	cout<<"TAN: "<<t;
 }
+void fact(int n)
+{	int i;
+   	unsigned long long fact = 1;
+    	// shows error if the user enters a negative integer
+    	if (n < 0)
+        	cout<<"Error! Factorial of a negative number doesn't exist.";
+   	else {
+        	for (i = 1; i <= n; ++i) {
+            	fact *= i;
+        	}
+        cout<<"Fact: "<<fact;
+    	}
+}
+	

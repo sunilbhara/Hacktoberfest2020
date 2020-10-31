@@ -7,7 +7,7 @@ int main()
 	extern int answer;
 	int choice;
 	double a, b;
-	cout << "Press \n 1.Addition \n 2.Subtraction \n 3.Division \n 4.Multiplication \n 5.Modulus \n 6.Power \n 7.Square Root \n";
+	cout << "Press \n 1.Addition \n 2.Subtraction \n 3.Division \n 4.Multiplication \n 5.Modulus \n 6.Power \n 7.Square Root \n 8.factorial ";
 	cin >> choice;
 	switch (choice)
 	{
@@ -65,6 +65,13 @@ int main()
 		cin >> a;
 		takeSquareRoot(a);
 		cout << "The square root is equal to " << answer;
+		break;
+	}
+	case 8:
+	{
+		cout << "Enter a number\t";
+		cin >> a;
+		fact(a);
 		break;
 	}
 
