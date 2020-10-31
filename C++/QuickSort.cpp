@@ -1,50 +1,57 @@
-/* C++ implementation of QuickSort Algorithm */
-#include <bits/stdc++.h> 
-using namespace std; 
-void swap(int*a, int*b) 
-{ 
-	int t = *a; 
-	*a = *b; 
-	*b = t; 
-} 
-int partition (int arr[], int low, int high) 
-{ 
-	int pivot = arr[high];
-	int i = (low-1); 
+#include<bits/stdc++.h>
+using namespace std;
 
-	for(j = low; j <= high - 1; j++) 
-	{ 
-		if (arr[j] < pivot) 
-		{ 
-			i++;
-			swap(&arr[i], &arr[j]); 
-		} 
-	} 
-	swap(&arr[i + 1], &arr[high]); 
-	return (i + 1); 
-} 
-void quickSort(int arr[], int low, int high) 
-{ 
-	if (low < high) 
-	{ 
-		int pi = partition(arr, low, high); 
-		quickSort(arr, low, pi - 1); 
-		quickSort(arr, pi + 1, high); 
-	} 
-} 
-void printArray(int arr[], int size) 
-{ 
-	int i; 
-	for (i = 0; i < size; i++) 
-		count << arr[i] << " "; 
-	count << endl; 
-} 
-int main() 
-{ 
-	int arr[] = {56, 43, 10, 91, 2, 45}; 
-	int n = sizeof(arr) / sizeof(arr[0]); 
-	quickSort(arr, 0, n - 1); 
-	count << "Sorted array: \n"; 
-	printArray(arr, n); 
-	return 0; 
-} 
+int partition(int arr[], int s, int e, int n)
+{
+        int start=s;
+        int pivot=e;
+        int i;
+        for(i=s;i<e;i++)
+        {
+                if(arr[i]<arr[pivot])
+                {
+                        int temp;
+                        temp=arr[i];
+                        arr[i]=arr[start];
+                        arr[start]=temp;
+                        start++;
+                }
+        }
+        int x;
+        x=arr[pivot];
+        arr[pivot]=arr[start];
+        arr[start]=x;
+//      int i;
+        for(i=0;i<n;i++)
+                cout << arr[i] << ' ';
+        cout << endl;
+        return start;
+}
+
+void quicksort(int arr[], int s, int e,int n)
+{
+        if(s>e)
+                return;
+        else
+        {
+                int pivot=partition(arr,s,e,n);
+                if(s!=pivot-1)
+                        quicksort(arr,s,pivot-1,n);
+                if(e!=pivot+1)
+                        quicksort(arr,pivot+1,e,n);
+        }
+}
+
+int main()
+{
+        int n;
+        cin >> n;
+        int arr[n];
+        int i;
+        for(i=0;i<n;i++)
+                cin >> arr[i];
+        quicksort(arr,0,n-1,n);
+//      for(i=0;i<n;i++)
+//              cout << arr[i] << ' ';
+//      cout << endl;
+}

@@ -1,33 +1,19 @@
-def infinite_sequence():
-	count = 0
-	while True:
-		if count ==100000:
-			break
-		yield count
-		count +=1
+'''
+Checks if user input is a palindrome,
+e.g. abba is a palindrome,
+it is the same word when reading backwards
+'''
+
+text = input("Enter text: ")
 
 
+text = text.casefold()
 
-def is_palindrome(num):
-    # Skip single-digit inputs
-    if num // 10 == 0:
-        return False
-    temp = num
-    reversed_num = 0
+# reverse the string
+rev_text = reversed(text)
 
-    while temp != 0:
-        reversed_num = (reversed_num * 10) + (temp % 10)
-        temp = temp // 10
-
-    if num == reversed_num:
-        return num
-    else:
-        return False
-        
-xx =0
-for i in infinite_sequence():
-    pal = is_palindrome(i)
-    if pal:
-    	print(pal)
-    if xx==5:
-    	break
+# check if the string is equal to its reverse
+if list(text) == list(rev_text):
+   print("{} is a palindrome.".format(text))
+else:
+   print("{} is not a palindrome.".format(text))
