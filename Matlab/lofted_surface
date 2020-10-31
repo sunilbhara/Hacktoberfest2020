@@ -1,0 +1,41 @@
+clc
+clear all
+close all
+% syms x y z
+% a=2*x+7*y+3;
+% b=5*x+6*z-4;
+% plot3(a,b)
+% 
+% 
+% % ezplot(b)
+% grid on
+u=0:0.1:1;
+v=0:0.1:1;
+P0=[2 3 0];
+P1=[5 7 0];
+R0=[4 0 6];
+R1=[7 0 11];
+Px=P0(1)+u*(P1(1)-P0(1));
+Py=P0(2)+u*(P1(2)-P0(2));
+Pz=P0(3)+u*(P1(3)-P0(3));
+Rx=R0(1)+v*(R1(1)-R0(1));
+Ry=R0(2)+v*(R1(2)-R0(2));
+Rz=R0(3)+v*(R1(3)-R0(3));
+a=plot3(Px,Py,Pz)
+hold on
+b=plot3(Rx,Ry,Rz)
+xlabel('x')
+ylabel('y')
+zlabel('z')
+for v1=0:0.004:1
+        Qx=Px+v1.*(Rx-Px);
+        Qy=Py+v1.*(Ry-Py);
+        Qz=Pz+v1.*(Rz-Pz);
+% fsurf(Qx,
+% mesh(Qx,Qy,Qz)
+%  mesh(a,b)
+% fsurf(Qx,Qy,Qz)
+        hold on
+        plot3(Qx,Qy,Qz)
+        hold on
+end
