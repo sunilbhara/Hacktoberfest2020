@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Our Company</title>
+</head>
+<body>
+
+<h1>Company employee details</h1>
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Apoorv</td>
+    <td>Shrivastav</td> 
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>Abha</td>
+    <td>Shrivastav</td> 
+    <td>14</td>
+  </tr>
+</table>
+
+</body>
+</html>
