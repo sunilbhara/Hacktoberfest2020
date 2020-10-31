@@ -36,3 +36,23 @@ double takeSquareRoot(double a)
 	answer = sqrt(a);
 	return answer;
 }
+void Sine(float x)
+{
+	float s;
+	s = sin(x);
+	cout<<"Sin: "<<s;
+}
+
+void Cos(float x) 
+{
+	float c;
+	c = cos(x);
+	cout<<"COS: "<<c;
+}
+
+void Tan(float x)
+{
+	float t;
+	t = tan(x);
+	cout<<"TAN: "<<t;
+}
