@@ -5,7 +5,13 @@ int main()
 	cout<<"Enter side of Rhombus:";
 	int n;
 	cin>>n;
-	
+	hollowRhombus();
+	cout << "\n";
+	solidRhombus();
+}
+
+//For Hollow Rhombus 
+void hollowRhombus(int n)	
 	for(int i=1;i<=n;i++)	//printing first line
 	cout<<"* ";
 	cout<<endl;
@@ -25,4 +31,20 @@ int main()
 		
 	for(int i=1;i<=n;i++)		//printing first line
 	cout<<"* ";
-}
+}	
+
+//For Solid Rhombus
+void solidRhombus(int n) 
+{ 
+    int i, j; 
+    for (i=1; i<=n; i++) 
+    {
+        for (j=1; j<=rows - i; j++)	// Print trailing spaces 
+            cout << " "; 
+              
+        for (j=1; j<=rows; j++)		// Print stars after spaces 
+            cout << "*"; 
+               
+        cout << "\n";		// Move to the next row 
+    } 
+} 
