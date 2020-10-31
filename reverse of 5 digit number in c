@@ -1,0 +1,17 @@
+#include<stdio.h>
+void main()
+{
+long num,a,b,c,d,e,rev;
+printf("\n enter a five digit no. \n");
+scanf("%ld",&num);
+a=num%10;
+b=num/10;
+c=b%10;
+b=b/10;
+d=b%10;
+b=b/10;
+e=b%10;
+b=b/10;
+rev=a*10000+c*1000+d*100+e*10+b*1;
+printf("the reversed no. of %ld is %ld",num,rev);
+}
