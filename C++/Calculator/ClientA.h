@@ -68,6 +68,5 @@ void fact(int n)
         	}
         cout<<"Fact: "<<fact;
     	}
-    return 0;
 }
 	
