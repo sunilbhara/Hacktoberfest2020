@@ -14,8 +14,8 @@ class Armstrong{
     c=c+(a*a*a);  
     }  
     if(temp==c)  
-    System.out.println("Armstrong...");   
+    System.out.println("armstrong...");   
     else  
-        System.out.println("Not Armstrong...");   
+        System.out.println("Not armstrong ....");   
    }  
 }  

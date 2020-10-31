@@ -1,17 +1,33 @@
-  
 import java.util.Random;
 
-import javax.swing.JOptionPane;
+public class RandomPasswordGenerator {
 
-public class Main {
-	public static void main(String Args[]) {
-		int c = Integer.parseInt(JOptionPane.showInputDialog("A password of how many characters?"));
-		String password = "";
-		Random r = new Random();
-		for (int i = 0; i < c; i++) {
-			password += (char) (97 + r.nextInt(25));
+	static public char[] getPassword(int len) {
+		
+		String capital_letters ="QWERTYUIOPASDFGHJKLZXCVBNM";   // String of capital letters
+		String small_letters="qwertyuiopasdfghklzxcvbnm";      //String of small letters
+		String special_chars="~!@#$%^&*()_+=-`][{}|;'<>?/.,";   //String of special characters
+		
+		String values=capital_letters+small_letters+special_chars;   // Adding all the elements in one String
+		
+		char password[]=new char[len];
+		Random random=new Random();   //Creating an Object of Random
+		
+		for(int i=0;i<len;i++) {
+			
+			password[i]=values.charAt(random.nextInt(values.length()));  //Using nextInt method to get an random element from String values 
 		}
-
-		JOptionPane.showMessageDialog(null, password);
+		
+		return password;
+		
+		
 	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int length=8;
+		System.out.println(getPassword(length));
+
+	}
+
 }
