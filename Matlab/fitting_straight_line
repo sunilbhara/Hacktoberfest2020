@@ -1,0 +1,17 @@
+clc
+clear all
+close all
+%Arranging in ascending order
+x=[1,1.1,1.8,2.2,2.5,3.5,3.7,4];
+y=[6.008,5.257,9.549,11.098,15.722,27.130,28.828,33.772];
+p=polyfit(x,y,1); %For straight line fitting
+y_fitt=polyval(p,x); % To evaluate points on the line 
+plot(x,y,'ko',x,y_fitt) % To display line approximating the data
+hold on
+p1=polyfit(x,y,2);
+y_fitt1=polyval(p1,x);
+plot(x,y,'ko',x,y_fitt1)
+grid on
+xlabel('x')
+ylabel('y')
+title('PLOTTING ST. LINE AND QUADRATIC CURVE')
