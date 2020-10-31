@@ -1,0 +1,5 @@
+include<stdio.h>
+void main()
+{
+Printf("live as if it's your last day,learn as if you are going to live forever- Mahatama Gandhi");
+}
