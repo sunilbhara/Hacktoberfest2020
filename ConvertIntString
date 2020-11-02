@@ -1,0 +1,5 @@
+public class ConvertIntString{
+    public static String intToString (int n){
+        return "" + n;
+    }
+}
