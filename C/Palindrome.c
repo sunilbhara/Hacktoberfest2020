@@ -1,29 +1,34 @@
-#include <stdio.h>
-int main() {
-    int n, revnum = 0, rem, num;
-    char choice;
-    do{
-        printf("Enter an integer: ");
-        scanf("%d", &n);
-        num = n;
+/*
+This is code to check if the entered string is Palindrome or Not
+*/
 
-        while (n != 0) {
-            rem = n % 10;
-            revnum = revnum* 10 + rem;
-            n =n/ 10;
-        }
-
-        if (num == revnum)
-            printf("%d is a palindrome number.", num);
-        else
-            printf("%d is not a palindrome number.", num);
-
-        printf("\nDo you want to continue(Y/N)?" );
-        fflush(stdin);
-        scanf("%c",&choice);
-        }
-    while(choice=='Y'||choice=='y');
-
-
-    return 0;
+#include <stdio.h> 
+#include <string.h> 
+  
+// A function to check if a string str is palindrome 
+void isPalindrome(char str[]) 
+{ 
+    // Start from leftmost and rightmost corners of str 
+    int l = 0; 
+    int h = strlen(str) - 1; 
+  
+    // Keep comparing characters while they are same 
+    while (h > l) 
+    { 
+        if (str[l++] != str[h--]) 
+        { 
+            printf("%s is Not Palindrome", str); 
+            return; 
+        } 
+    } 
+    printf("%s is palindrome", str); 
+} 
+  
+// Driver program to test above function 
+int main() 
+{ 
+    isPalindrome("abba"); 
+    isPalindrome("abbccbba"); 
+    isPalindrome("geeks"); 
+    return 0; 
 }
